@@ -1,0 +1,23 @@
+$size-full: 1820px;
+$size-desktop: 1439px;
+$size-laptop: 1199px;
+$size-table: 739px;
+
+:root {
+	--color-bg: #F1F4F5;
+	--color-white: #FFFFFF;
+	--color-primary: #231F20;
+	--color-grey: #666666;
+	--color-grey-light: #8C8C8C;
+	--color-red: #D81823;
+
+	--padding-container: 20px;
+	--width-container: 1920px;
+
+
+	@media (max-width: $size-table) {
+
+		--padding-container: 10px;
+	}
+}
+
