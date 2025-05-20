@@ -296,13 +296,16 @@
     &__nav {
       position: fixed;
       top: 0;
-      left: -100dvw;
+      left: 0;
       width: 100dvw;
       height: 100dvh;
-      transition: left .4s linear;
-      z-index: 10;
+      z-index: -1;
       overflow: hidden;
       background-color: rgba(0, 0, 0, .6);
+      visibility: hidden;
+      pointer-events: none;
+      opacity: 0;
+      transition: all .5s ease-in-out;
 
       &-back {
         width: 100%;
@@ -321,10 +324,19 @@
         display: flex;
         flex-direction: column;
         position: relative;
+        transform: translateX(-100dvw);
+        transition: all .4s ease-in-out;
       }
 
       &.is-open {
-        left: 0;
+        visibility: visible;
+        pointer-events: unset;
+        z-index: 10;
+        opacity: 1;
+
+        & .header__nav-wrapper {
+          transform: translateX(0);
+        }
       }
 
       &-close {

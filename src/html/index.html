@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -18,17 +18,18 @@
 
 <main class="main">
 	<div class="container">
-		<section class="hero" aria-label="Промо-акции">
+		<section class="hero" id="hero-slider" aria-label="Промо-акции">
 			<div class="hero__slider swiper"
-				 role="region"
+				 role="slider"
 				 aria-roledescription="carousel"
 				 aria-label="Слайдер акций">
 
 				<div class="swiper-wrapper">
 					<article class="swiper-slide hero__slider-item"
-							 role="group"
+							 role="article"
+							 tabindex="0"
 							 aria-roledescription="slide"
-							 aria-label="1 из 4">
+							 aria-label="Слайд акций 1 из 4">
 						<picture>
 							<source
 									media="(max-width: 550px)"
@@ -44,28 +45,9 @@
 					</article>
 
 					<article class="swiper-slide hero__slider-item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="2 из 4">
-						<picture>
-							<source
-									media="(max-width: 550px)"
-									width="345"
-									height="500"
-									srcset="./img/hero/banner--mobile.webp">
-							<img class="hero__slider-img"
-								 loading="lazy"
-								 width="1880"
-								 height="1058"
-								 alt="Скидки до 50%"
-								 src="./img/hero/banner.webp">
-						</picture>
-					</article>
-
-					<article class="swiper-slide hero__slider-item"
-							 role="group"
-							 aria-roledescription="slide"
-							 aria-label="3 из 4">
+							 aria-label="Слайд акций 2 из 4">
 						<picture>
 							<source
 									media="(max-width: 550px)"
@@ -82,9 +64,28 @@
 					</article>
 
 					<article class="swiper-slide hero__slider-item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="4 из 4">
+							 aria-label="Слайд акций 3 из 4">
+						<picture>
+							<source
+									media="(max-width: 550px)"
+									width="345"
+									height="500"
+									srcset="./img/hero/banner--mobile.webp">
+							<img class="hero__slider-img"
+								 loading="lazy"
+								 width="1880"
+								 height="1058"
+								 alt="Скидки до 50%"
+								 src="./img/hero/banner.webp">
+						</picture>
+					</article>
+
+					<article class="swiper-slide hero__slider-item"
+							 role="article"
+							 aria-roledescription="slide"
+							 aria-label="Слайд акций 4 из 4">
 						<picture>
 							<source
 									media="(max-width: 550px)"
@@ -103,14 +104,14 @@
 
 				<button class="hero__slider-button hero__slider-button--prev"
 						aria-label="Предыдущий слайд"
-						aria-controls="slider">
-					<img src="./img/icons/arrow-prev--white.svg" alt="" role="presentation">
+						aria-controls="hero-slider">
+					<img src="./img/icons/arrow-prev--white.svg" alt="стрелка назад" role="presentation">
 				</button>
 
 				<button class="hero__slider-button hero__slider-button--next"
 						aria-label="Следующий слайд"
-						aria-controls="slider">
-					<img src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+						aria-controls="hero-slider">
+					<img src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 				</button>
 			</div>
 
@@ -122,7 +123,7 @@
 				<h2 class="products__title title">Новинки</h2>
 				<a href="#" class="products__all-link btn">
 					<span>Все новинки</span>
-					<img width="24" height="24" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+					<img width="24" height="24" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 				</a>
 			</div>
 
@@ -134,11 +135,12 @@
 
 				<div class="swiper-wrapper">
 					<article class="swiper-slide products__item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="1 из 4">
+							 tabindex="0"
+							 aria-label="Слайд новинок 1 из 4">
 						<button class="products__favorite" aria-label="Добавить в избранное">
-							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt=""
+							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt="сердце"
 								 role="presentation">
 						</button>
 
@@ -164,11 +166,11 @@
 					</article>
 
 					<article class="swiper-slide products__item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="2 из 4">
+							 aria-label="Слайд новинок 2 из 4">
 						<button class="products__favorite" aria-label="Добавить в избранное">
-							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt=""
+							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt="сердце"
 								 role="presentation">
 						</button>
 
@@ -193,11 +195,11 @@
 					</article>
 
 					<article class="swiper-slide products__item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="3 из 4">
+							 aria-label="Слайд новинок 3 из 4">
 						<button class="products__favorite" aria-label="Добавить в избранное">
-							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt=""
+							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt="сердце"
 								 role="presentation">
 						</button>
 
@@ -222,11 +224,11 @@
 					</article>
 
 					<article class="swiper-slide products__item"
-							 role="group"
+							 role="article"
 							 aria-roledescription="slide"
-							 aria-label="4 из 4">
+							 aria-label="Слайд новинок 4 из 4">
 						<button class="products__favorite" aria-label="Добавить в избранное">
-							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt=""
+							<img width="20" height="20" src="./img/icons/favorite--black.svg" alt="сердце"
 								 role="presentation">
 						</button>
 
@@ -254,13 +256,13 @@
 				<button class="products__slider-button products__slider-button--prev"
 						aria-label="Предыдущий слайд"
 						aria-controls="products-slider-1">
-					<img src="./img/icons/arrow-prev--black.svg" alt="" role="presentation">
+					<img src="./img/icons/arrow-prev--black.svg" alt="стрелка назад" role="presentation">
 				</button>
 
 				<button class="products__slider-button products__slider-button--next"
 						aria-label="Следующий слайд"
 						aria-controls="products-slider-1">
-					<img src="./img/icons/arrow-next--black.svg" alt="" role="presentation">
+					<img src="./img/icons/arrow-next--black.svg" alt="стрелка вперед" role="presentation">
 				</button>
 			</div>
 
@@ -268,7 +270,7 @@
 
 			<a href="#" class="products__all-link products__all-link--mobile btn">
 				<span>Все новинки</span>
-				<img width="24" height="24" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+				<img width="24" height="24" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 			</a>
 		</section>
 
@@ -282,10 +284,11 @@
 							<h3 class="collections__item-name">Магическая битва</h3>
 						</header>
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 					</div>
-					<img width="227" height="300" class="collections__item-image" src="./img/collections/1.png" loading="lazy" alt="Коллекция 'Магическая битва'">
+					<img width="227" height="300" class="collections__item-image"
+						 src="./img/collections/1.png" loading="lazy" alt="Коллекция 'Магическая битва'">
 				</article>
 
 				<article class="collections__item">
@@ -296,7 +299,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 
 					</div>
@@ -311,7 +314,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 
 					</div>
@@ -326,7 +329,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 
 					</div>
@@ -341,7 +344,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 
 					</div>
@@ -356,7 +359,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 					</div>
 					<img width="227" height="300" class="collections__item-image" src="./img/collections/6.png" loading="lazy" alt="Коллекция 'Магическая битва'">
@@ -369,7 +372,7 @@
 							<h3 class="collections__item-name">Магическая битва</h3>
 						</header>
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 					</div>
 					<img width="227" height="300" class="collections__item-image" src="./img/collections/7.png" loading="lazy" alt="Коллекция 'Магическая битва'">
@@ -383,7 +386,7 @@
 						</header>
 
 						<a href="#" class="collections__item-link" aria-label="Перейти к коллекции">
-							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24"  loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 					</div>
 					<img width="227" height="300" class="collections__item-image" src="./img/collections/8.png" loading="lazy" alt="Коллекция 'Магическая битва'">
@@ -394,7 +397,7 @@
 						<h2 class="collections__promo-title title">Популярные коллекции</h2>
 						<a href="#" class="collections__promo-link btn" aria-label="Все коллекции">
 							<span>Все коллекции</span>
-							<img width="24" height="24" loading="lazy" src="./img/icons/arrow-next--white.svg" alt="" role="presentation">
+							<img width="24" height="24" loading="lazy" src="./img/icons/arrow-next--white.svg" alt="стрелка вперед" role="presentation">
 						</a>
 					</div>
 				</div>
